@@ -24,11 +24,7 @@
 
     <div class="row justify-content-center">
         <div class="col-md-6 d-flex justify-content-between align-items-center mb-4 post-info">
-            <div class="icon-item d-flex align-items-center fade-up">
-                <i class="fa fa-user mr-2" aria-hidden="true"></i>
-                <p>{{ post.user.username }}</p>
-            </div>
-            <div class="icon-item d-flex align-items-center fade-up">
+            <div class="icon-item d-flex align-items-center fade-up" style="margin-left: auto; margin-right: auto">
                 <i class="fa fa-calendar mr-2" aria-hidden="true"></i>
                 <p>{{ post.publish|date:"F j, Y" }}</p>
             </div>
@@ -43,46 +39,6 @@
         </div>
     </div>
 
-    <div class="row mt-5">
-
-
-        <div class="col-md-8 offset-md-2 p-3 detail_comments">
-            <h3 class="mb-4 fade-up" style="color: #555555;">Comments</h3>
-
-            <div class="comment-list fade-up"
-                 style="max-height: 300px; overflow-y: scroll; padding: 15px; background-color: #f9f9f9; border-radius: 5px;">
-                {% for comment in post.comments.all %}
-                <div class="comment mb-3 p-3 fade-up"
-                     style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 5px;">
-                    <strong>{{ comment.name }}</strong> - <small>{{ comment.created|date:"F j, Y, g:i a" }}</small>
-                    <p class="mt-2">{{ comment.body }}</p>
-                </div>
-                {% empty %}
-                <p>No comments yet. Be the first to comment!</p>
-                {% endfor %}
-            </div>
-
-            <br>
-            <h3 style="color: #555555" class="fade-up">Add a comment</h3>
-            <form action="" method="POST" class="fade-up">
-                {% csrf_token %}
-                <div class="row">
-                    <div class="col-md-6 fade-up">
-                        {{ comment_form.name }}
-                    </div>
-                    <div class="col-md-6 fade-up">
-                        {{ comment_form.email }}
-                    </div>
-                </div>
-                <div class="form-group fade-up">
-                    {{ comment_form.body }}
-                </div>
-                <br>
-                <button type="submit" class="btn btn-primary btn-block fade-up post-btn">Send message</button>
-            </form>
-        </div>
-
-    </div>
 </div>
 
 <br><br>
@@ -103,10 +59,6 @@
         <div class="lp_content fade-up">
             <p class="lp_title">{{ post.title|slice:":1"|upper }}{{ post.title|slice:"1:"|lower }}</p>
             <div class="lp_icons">
-                <div class="icon-item">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    <p>{{ post.user.username }}</p>
-                </div>
                 <div class="icon-item">
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                     <p>{{ post.publish|date:"F j, Y" }}</p>
