@@ -60,9 +60,6 @@ class Orders(models.Model):
     date = models.DateField(help_text="Enter the current date")
     condition = models.BooleanField(default=False)
 
-    def __str__(self):
-        return f"Order by {self.name} for {self.make.name} {self.model.name} ({self.year.year})"
-
 
 
 class Post(BaseModel):

@@ -6,7 +6,6 @@ class CommentInline(admin.TabularInline):
     model = Comment
     extra = 1
 
-
 @admin.register(Orders)
 class ObjectAdmin(admin.ModelAdmin):
     list_display = (
