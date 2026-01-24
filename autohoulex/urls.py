@@ -19,6 +19,7 @@ urlpatterns = [
     path('gallery/', gallery, name='gallery'),
     path('services/', services, name='services'),
     path('privecy-policy', policy, name='policy'),
+    path('terms-of-service', terms, name='terms'),
     path('quote/', get_quote, name='quote'),
     path('success/', success_view, name='success'),
     path('fetch_make/', views.fetch_make, name='fetch_make'),

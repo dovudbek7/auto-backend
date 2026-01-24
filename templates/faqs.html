@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+\{% extends "base.html" %}
 {% load static %}
 {% block title %}Services{% endblock %}
 
@@ -123,10 +123,14 @@
                 <div class="" style="display: flex;">
                     <input type="checkbox" name="condition" id="condition" style="float: left; margin-bottom: auto"
                            class="form-check-input">
-                    <label for="condition" class="" style="float: right; text-align: start; margin-left: 10px">I agree
-                        to receive text massages from Auto Haul Express LLC. Stay in the loop! Receive exclusive updates
-                        via SMS. MSG & data rates may apply. Reply 'STOP' to unsubscribe.
-                        <br><a href="{% url 'auto:policy' %}">Privacy Policy</a></label>
+
+<label for="condition" class="" style="float: right; text-align: start; margin-left: 10px">
+                        By checking this box, I consent to receive text messages related to auto transport from Auto Haul Movers LLC. You can reply "STOP" at any time to opt-out. Message and data rates may apply. Message frequency may vary, text HELP to (843-376-1378) for assistance. For more information, please refer to our >
+                        <a href="{% url 'auto:policy' %}">Privacy Policy</a>, and <a href="{% url 'auto:terms' %}">SMS Terms and Conditions on </a> our website.
+</label>
+
+
+
                 </div>
 
                 <div class="index-btn-wrapper">
@@ -229,7 +233,7 @@
             <img src="{% static 'img/service_road.png' %}" alt="Services Image">
         </div>
         <div class="services-text">
-            <h2 class="fade-up">The type of services  <span class="highlight">Auto Haul Express LLC</span> offers</h2>
+            <h2 class="fade-up">The type of services  <span class="highlight">Auto Haul Movers LLC</span> offers</h2>
             <p class="fade-up">Discover our reliable vehicle transportation services tailored to your needs. With a
                 seasoned team and a focus on care and security, we ensure a smooth journey for your vehicles, backed by
                 personalized customer support at every stage.</p>
@@ -270,13 +274,13 @@
 </div>
 
 <div class="container third_section ">
-    <p class="fade-up" style="margin-top: 100px">Why <span style="color: #0085FF ">Auto Haul Express?</span></p>
+    <p class="fade-up" style="margin-top: 100px">Why <span style="color: #0085FF ">Auto Haul Movers?</span></p>
 
     <div class="third_card fade-up">
         <img src="{% static 'img/Realiable.jpg' %}" alt="">
         <div class="">
             <p>Outstanding Reliability and Efficiency</p>
-            <span>At Auto Haul Express, we are dedicated to providing superior reliability and efficiency. With our
+            <span>At Auto Haul Movers, we are dedicated to providing superior reliability and efficiency. With our
                 state-of-the-art logistics technology, we guarantee timely and secure vehicle transport, minimizing delays and ensuring your convenience.</span>
         </div>
     </div>

@@ -132,5 +132,5 @@ MEDIA_URL = "/media/"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ["https://autohaulex.com/", "http://autohaulex.com/"]
+CSRF_TRUSTED_ORIGINS = ["https://autohaulmovers.com/", "http://autohaulmovers.com/"]
 SITE_ID = 1

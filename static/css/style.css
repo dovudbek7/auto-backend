@@ -248,7 +248,7 @@ select.valid {
   background-color: rgba(78, 78, 78, 0.66);
   padding-top: 70px;
   padding-bottom: 90px;
-  height: 11%;
+  
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;

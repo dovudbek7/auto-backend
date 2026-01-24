@@ -1,0 +1,103 @@
+  GNU nano 7.2                                                                                                   terms                                                                                                            
+  [1/1]                                                                                                   policy.html
+{% extends "base.html" %}
+{% load static %}       
+{% load blog_tags %}
+
+
+{% block title %}Privacy Policy{% endblock %}
+
+
+{% block extra_css %}
+<style>
+    .privacy-policy {
+        padding: 2rem;
+        background-color: #f9f9f9;
+        margin-top: 130px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        width: 90%;
+    }
+
+    .privacy-title {
+        color: #007bff;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    .privacy-text {
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+        color: #232323;
+    }
+
+    @media (max-width: 768px) {
+        .privacy-policy {
+            padding: 1rem;
+        }
+    }
+</style>
+{% endblock %}
+
+
+{% block content %}
+
+
+<h1 class="privacy-title">Terms and Conditions for SMS Communications</h1><br>
+
+<h2 class="privacy-title">1 - SMS Consent and Privacy</h2>
+<p class="privacy-text">
+    Phone numbers collected as part of the SMS consent process will not be shared with third parties for marketing purposes.
+</p>
+
+<h2 class="privacy-title">2 - Types of SMS Messages</h2>
+<p class="privacy-text">
+    If you consent to receive SMS messages from Auto Haul Movers LLC, you may receive messages such as:<br>
+    - Order updates: notifications about shipments, deliveries, or account status.<br>
+    - Service alerts: updates regarding maintenance, service availability, or compliance notifications.
+</p>
+
+<h2 class="privacy-title">3 - Message Frequency</h2>
+<p class="privacy-text">
+    The number of messages may vary based on communication type. You may receive up to 3 SMS messages per week related to order updates or service alerts.
+</p>
+
+<h2 class="privacy-title">4 - Potential Carrier Charges</h2>
+<p class="privacy-text">
+    Standard message and data rates may apply depending on your carrier and your plan, including international messaging fees if applicable.
+</p>
+
+<h2 class="privacy-title">5 - How to Opt-In</h2>
+<p class="privacy-text">
+    You can consent to receive SMS messages from Auto Haul Movers LLC by:<br>
+    - Submitting an online form on our website.<br>
+    - Providing verbal consent during service registration.
+</p>
+
+<h2 class="privacy-title">6 - How to Opt-Out</h2>
+<p class="privacy-text">
+    You may opt out at any time by replying “STOP” to any SMS you receive from us. Alternatively, you can contact us directly at info@autohaulmovers.com or phone +1 (843) 376-1348 to request removal from our messaging list.
+</p>
+
+<h2 class="privacy-title">7 - Need Help?</h2>
+<p class="privacy-text">
+    If you need assistance, reply “HELP” to any SMS message or contact us directly using the contact information above.
+</p>
+
+<h2 class="privacy-title">8 - Additional Options</h2>
+<p class="privacy-text">
+    If you prefer not to receive SMS messages, simply do not check the SMS consent box on our forms.
+</p>
+
+<h2 class="privacy-title">9 - Standard Messaging Disclosures</h2>
+<p class="privacy-text">
+    Message and data rates may apply.<br>
+    You may opt out at any time by texting “STOP.”<br>
+    For help, text “HELP” or visit our Privacy Policy and Terms and Conditions pages.<br>
+    Message frequency may vary.
+</p>
+
+
+
+{% endblock %}

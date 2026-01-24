@@ -128,6 +128,8 @@ def success_view(request):
 def policy(request):
     return render(request, 'policy.html')
 
+def terms(request):
+    return render(request, 'terms.html')
 
 def trigger_404(request, exception):
     return render(request, '404.html', {'show_quote_button': True}, status=404)

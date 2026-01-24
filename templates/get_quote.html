@@ -102,9 +102,13 @@
         <input type="date" name="date" class="form-control" placeholder="Date" required>
         <div class="checkbox-group">
             <input type="checkbox" name="condition" style="margin-bottom: auto" id="condition" class="form-check-input">
-            <label for="condition">I agree to receive text massages from Auto Haul Express LLC. Stay in the loop!
-                Receive exclusive updates via SMS. MSG & data rates may apply. Reply 'STOP' to unsubscribe.<a
-                        href="{% url 'auto:policy' %}">Privacy Policy</a></label>
+		
+		<label for="condition" class="" style="float: right; text-align: start; margin-left: 10px">
+                        By checking this box, I consent to receive text messages related to auto transport from Auto Haul Movers LLC. You can reply "STOP" at any time to opt-out. Message and data rates may apply. Message frequency may vary, text HELP to (843-376-1378) for assistance. For more information, please refer to our >
+                        <a href="{% url 'auto:policy' %}">Privacy Policy</a>, and <a href="{% url 'auto:terms' %}">SMS Terms and Conditions on </a> our website.
+</label>
+
+
         </div>
         <div class="button-group">
             <button type="button" class="btn-prev" onclick="run(3, 2);">Previous</button>

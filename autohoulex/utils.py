@@ -4,7 +4,7 @@ import requests
 from .forms import OrdersForm
 
 TELEGRAM_BOT_TOKEN = '7483825117:AAGMLu95Huk3-u8x5x5fNuj2GgVeNckA_C4'
-CHAT_ID = '-4589564113'
+CHAT_ID =  '-1003010676747'
 CONTACT_CHAT_ID = '-4537347598'
 
 
