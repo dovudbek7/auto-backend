@@ -244,18 +244,28 @@ select.valid {
 }
 
 .banner_all {
+
   display: flex;
   background-color: rgba(78, 78, 78, 0.66);
-  padding-top: 70px;
+  padding-top: 100px;
   padding-bottom: 90px;
 
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
+.banner_all iframe{
+  width: 400px;
+  border-radius: 30px;
+  height: 500px;
+}
+@media screen and (max-width: 768px) {
+  .banner_all iframe{
+    width: 350px;
+  }
+}
 .banner_p {
-  margin-left: 10%;
   text-align: left;
 }
 
