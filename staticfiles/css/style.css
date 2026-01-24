@@ -247,12 +247,13 @@ select.valid {
 
   display: flex;
   background-color: rgba(78, 78, 78, 0.66);
-  padding-top: 100px;
+  padding-top: 170px;
   padding-bottom: 90px;
 
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
+
 }
 
 .banner_all iframe{
@@ -265,6 +266,7 @@ select.valid {
     width: 350px;
   }
 }
+
 .banner_p {
   text-align: left;
 }
